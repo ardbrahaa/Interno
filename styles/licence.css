@@ -1,0 +1,30 @@
+.photography {
+  max-width: 900px;
+  margin-block: 200px 100px; 
+}
+
+.sources {
+  padding: 69px 47px;
+  border-radius: 50px;
+}
+
+.imgHolder { 
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.imgHolder > * { 
+  max-width: 400px;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.photography p { margin-top: 25px;}
+.sources p { margin-block: 25px 54px;}
+.pexel { margin-block: 125px;}
+.fonts { align-items: center;}
+.fontsP { max-width: 600px;}
+
+@media (max-width: 800px){
+  .photography {margin-block: 50px;}
+  .imgHolder >* { max-width: 250px;}
+}

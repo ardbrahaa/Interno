@@ -1,0 +1,122 @@
+.pplCardContainer {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-block: 150px;
+}
+
+.pplCard {
+  max-width: 250px;
+  text-align: center;
+  margin-block: 25px;
+}
+
+.pplCardContainer .socialsHolder {
+  max-width: 50%;
+  margin: 20px auto 10px auto;
+  justify-content: center;
+}
+
+.pplImg { border-radius: 25px;}
+
+.pplCard:hover {
+  transform: scale(1.025);
+}
+
+.singleContainer {
+  justify-content: space-between;
+  margin-block: 150px 75px;
+  gap: 20px;
+}
+
+.singleImg {
+  max-width: 450px;
+  border-radius: 50px;
+}
+
+.singleInfo {
+  max-width: 650px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.singleInfo .ourInfo {
+  align-items: center;
+}
+
+.check {
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+.bio {
+  flex-direction: column;
+  gap: 25px;
+}
+
+.lastAbt { gap: 20px;}
+
+.lastAbt {
+  margin-block: 50px 100px;
+  justify-content: space-between;
+}
+
+.simplicity {
+  flex-direction: column;
+  max-width: 500px;
+  gap: 30px;
+}
+
+.qAndA {
+  padding: 14px 22px;
+  border: 1px solid #CDA274;
+  border-radius: 25px;
+}
+
+.answer {
+  display: none;
+}
+
+.clicked {
+  border: none;
+  padding: 24px 22px 40px 22px;
+  background-color: #F4F0EC;
+}
+
+.question {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.open {
+  display: block;
+}
+
+@media (max-width: 850px){
+  .singleContainer, .lastAbt, .bio {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .singleInfo {
+    align-items: center;
+  }
+
+  .singleImg {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .pplCardContainer {
+    margin-block: 50px;
+  }
+
+  .singleImg {
+    max-width: 300px;
+  }
+
+  .singleContainer {
+    margin-block: 50px;
+  }
+}

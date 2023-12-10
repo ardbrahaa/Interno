@@ -1,0 +1,185 @@
+/* Banner */
+.banner { 
+  padding-block: 200px;
+  background-image: url('/assets/images/index/banner.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 225px;
+}
+
+.bannerContent { max-width: 550px;}
+
+/* About */
+.aboutUs { 
+  justify-content: space-between;
+  margin-block: 150px;
+}
+.abtContent { max-width: 450px;}
+.abtP { margin-top: 33px;}
+.callImg { margin-right: 10px;}
+
+.callDiv {
+  margin-block: 45px;
+  align-items: center;
+}
+
+.abtImg {
+  max-width: 600px;
+  border-radius: 0 200px 0 200px;
+}
+
+/* Thoughts */
+.thoughtsWrapper {
+  padding: 88px 24px;
+  border-radius: 50px;
+  margin-block: 150px;
+}
+
+.thoughtsWrapper h1 { 
+  max-width: 550px;
+  margin: auto;
+  text-align: center;
+}
+
+.thoughts { 
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.thoughtsCard {
+  width: 350px;
+  margin-top: 38px;
+  padding: 34px 57px;
+  border-radius: 25px;
+}
+
+.pfpWrapper {
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.pfp {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+/* Projects */
+.projectsWrapper { 
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-block: 36px 150px;
+}
+
+.projectsTxt {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.projectsCard {
+  max-width: 500px;
+  margin-top: 56px;
+}
+
+.projectsDesc { 
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+  
+.project { max-width: 500px;}
+.project1 { border-top-right-radius: 50px;}
+.project2 { border-top-left-radius: 50px;}
+.project3 { border-bottom-right-radius: 50px;}
+.project4 { border-bottom-left-radius: 50px;}
+
+/* Articles */
+.articles {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.articles .desc { max-width: 62ch;}
+
+.cardsHolder {
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.articleCard {
+  width: 365px;
+  text-align: start;
+  padding: 21px;
+  border-radius: 62px;
+  border: 1px solid #E7E7E7;
+  margin-block: 15px;
+}
+
+.articleImg {
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+}
+
+.date {
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 30px 20px;
+}
+
+.circleArrow {
+  width: 52px;
+  height: 52px;
+  background-image: url('/assets/icons/arrowCircle.svg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.articleCard:hover { 
+  background-color: #f4f0ec;
+  .circleArrow { background-image: url('/assets/icons/arrowCircleWhite.svg');}
+}
+
+.articleImgWrapper { position: relative;}
+
+.tag { 
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  padding: 5px 10px;
+  border-radius: 8px 8px 8px 0px;
+}
+
+@media (max-width: 1100px){
+  .work { margin-block: 50px;}
+  .aboutUs{
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-block: 50px;
+  }
+
+  .project, .projectsCard { max-width: 400px;}
+}
+
+@media (max-width: 500px){
+  .workCard {
+    padding: 0;
+    margin: 0;
+  }
+
+  .abtContent { text-align: center;}
+  .btn { margin: auto;}
+  .callDiv { justify-content: center;}
+  .projectsCard, .project { width: 250px;}
+  .bannerContent .btn { margin-top: 20px;}
+  .banner { padding-block: 100px;}
+}

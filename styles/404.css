@@ -1,0 +1,39 @@
+.wrapper404 {
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.wrapper404 div {
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  height: fit-content;
+}
+
+.wrapper404 div h1 {
+  font-size: 250px;
+}
+
+.img404 {
+  max-width: 600px;
+  border-bottom-left-radius: 50%;
+}
+
+@media (max-width: 900px){
+  .img404 {
+    max-width: 400px;
+  }
+
+  .wrapper404 { text-align: center;}
+  .wrapper404 .btn { margin: 25px auto;}
+
+  .wrapper404 div h1 {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 700px){
+  .wrapper404{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,84 @@
+/* Quote box */
+.quoteBox {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 750px;
+  margin: 150px auto;
+  text-align: center;
+  padding: 65px 60px;
+}
+
+.quoteBox {
+	--b: 15px; /* border width */
+	--c: 11.6em; /* corner size */
+	--r: 2em; /* corner rounding */
+	position: relative;
+	border: solid var(--b) transparent;
+	
+	&::before {
+		position: absolute;
+		z-index: -1;
+		inset: calc(-1*var(--b));
+		border: inherit;
+		border-radius: var(--r);
+		background-color: #F4F0EC;
+		--corner: 
+			conic-gradient(from -90deg at var(--c) var(--c), red 25%, #0000 0) 
+				0 0/ calc(100% - var(--c))  calc(100% - var(--c)) border-box;
+		--inner: conic-gradient(red 0 0) padding-box;
+		-webkit-mask: var(--corner), var(--inner);
+		-webkit-mask-composite: source-out;
+						mask: var(--corner) subtract, var(--inner);
+		content: ''
+	}
+}
+
+.quoteBox p { margin-block: 0 30px;}
+
+/* Our Work */
+.ourWork { 
+  margin-block-end: 150px;
+  justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.workDesc { 
+  max-width: 500px;
+  padding-right: 25px;
+}
+
+.workImg { 
+  max-width: 600px;
+  border-radius: 75px;
+}
+
+.workP { margin-block: 23px 41px;}
+
+
+@media (max-width: 1150px){
+	.workDesc {max-width: 400px;}
+	.workImg {max-width: 500px;}
+}
+
+@media (max-width: 950px){
+	.ourWork {
+		justify-content: center;
+		gap: 25px;
+	}
+
+	.workDesc {
+		text-align: center;
+		padding-right: 0;
+	}
+
+	.workDesc .btn {
+		margin: auto;
+	}
+}
+
+@media (max-width: 768px){
+	.quoteBox {
+		margin-top: 50px;}
+		.quoteBox p { font-size: 16px;}
+}

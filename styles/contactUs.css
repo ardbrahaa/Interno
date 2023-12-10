@@ -1,0 +1,103 @@
+.mainTxt { 
+  text-align: center;
+  max-width: 650px;
+  margin: 150px auto 75px;
+}
+
+.applicationForm { 
+  justify-content: space-between;
+}
+
+.infoContainer {
+  max-width: 350px;
+  padding: 76px 32px;
+  border-radius: 50px;
+  flex-direction: column;
+  gap: 47px;
+}
+
+.infoContainer > div:first-child {
+  flex-direction: column;
+  gap: 30px;
+}
+
+.location { 
+  position: relative;
+  margin-block: 150px;
+}
+.locationImg { border-radius: 50px;}
+
+.vector {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  z-index: 1;
+}
+
+.input1 {
+  max-width: 350px;
+  margin-inline: 5px;
+  margin-bottom: 50px;
+}
+
+.input2 {
+  max-width: 725px;
+  margin-inline: 5px;
+  padding-bottom: 100px;
+}
+
+.ourInfo {
+  align-items: center;
+  gap: 10px;
+}
+
+.btnHolder { justify-content: end;}
+.btn { border: none;}
+
+@media (max-width: 1100px){
+  .infoContainer {
+    justify-content: center;
+    padding-inline: 15px;
+  }
+
+  .applicationForm {
+    justify-content: space-evenly;
+  }
+
+  .input1 {
+    display: block;
+  }
+
+  .input2 {max-width: 350px;}
+
+  .btn {
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px){
+  .input1, .input2 {
+     max-width: 100%;
+     width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+  .mainTxt {
+    margin-top: 50px;
+  }
+
+  .applicationForm { 
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .appForm { width: 100%;}
+
+  .input1, .input2 {
+    min-width: 70%;
+  }
+
+  .location { margin-block: 50px;}
+}

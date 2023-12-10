@@ -1,0 +1,19 @@
+.changelogCont {
+  margin-block: 200px;
+  padding-block: 128px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.changelogCont h1 { 
+  align-items: center; 
+  justify-content: center; 
+  gap: 25px;
+}
+
+@media (max-width: 500px){
+  .changelogCont{
+    margin-block: 75px;
+    padding-block: 75px;
+  }
+}

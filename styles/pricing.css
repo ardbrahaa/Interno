@@ -1,0 +1,52 @@
+.pricingContainer { 
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-block: 150px;
+}
+
+.pricingCard {
+  padding: 50px;
+  border-radius: 25px;
+  width: fit-content;
+  text-align: center;
+  margin-block: 15px;
+}
+
+.pricingHead h2{ margin-block: -55px 50px;}
+
+hr {
+  margin-left: -50px;
+  width: calc(50px + 100% + 50px);
+  height: 1px;
+  border: none;
+  background-color: #CDA274;
+}
+
+.btnOne { 
+  margin: 50px auto 0 auto;
+  padding-inline: 65px;
+}
+
+.btnOne:hover { 
+  background-color: #292F36;
+  box-shadow: none;
+}
+
+.pricingCard:hover h1 { color: #CDA274;}
+
+@media (max-width: 768px){
+  .pricingContainer { margin-block: 100px;}
+  .pricingHead h2{ margin-block: -25px 50px;}
+  .pricingCard { margin-inline: 10px;}
+}
+
+@media (max-width: 500px){
+  hr {
+    width: calc(25px + 100% + 25px);
+    margin-left: -25px;
+  }
+
+  .pricingCard { padding-inline: 25px;}
+  .btnOne {padding: 10px 25px;}
+  .pricingContainer { margin-block: 50px;}
+}

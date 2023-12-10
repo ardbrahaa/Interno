@@ -1,0 +1,281 @@
+.latestPost {
+  margin-block: 150px;
+}
+.latestPost h1, .articlesNews h1 {
+  margin-bottom: 25px;
+}
+
+.postContent {
+  padding: 20px;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+.postImg{
+  max-width: 750px;
+  border-radius: 25px;
+}
+
+.postText {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.postDesc {
+  margin-block: 20px 10px;
+}
+
+.date {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.cardsHolder {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.articleCard {
+  max-width: 350px;
+  padding: 21px;
+  border: 1px solid #F4F0EC;
+  border-radius: 62px;
+  margin-block: 15px;
+}
+
+.articleCard:hover {
+  background-color: #F4F0EC;
+  .icon1 { display: none;}
+  .icon2 { display: block;}
+}
+
+.icon2 { display: none;}
+
+.articleImg {
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+.articleCard .date {
+  margin-top: 20px;
+}
+
+.numberedContainer {
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.numbered {
+  padding: 14px 17px;
+  border: 1px solid #CDA274;
+  border-radius: 50%  ;
+}
+
+.numbered:hover {
+  background-color: #CDA274;
+  color: #ffffff;
+}
+
+.singleBlogHeader .headerContent {background-color: transparent;}
+
+.blogSingle {
+  justify-content: space-between;
+  margin-block: 150px;
+  gap: 50px;
+  padding-inline: 0;
+}
+
+.blogDetails {
+  max-width: 800px;
+}
+
+.sideBar {
+  max-width: 350px;
+}
+
+.sBlogHeader {
+  margin-bottom: 21px;
+}
+
+.sImg {
+  border-radius: 50px;
+  margin-bottom: 46px;
+}
+
+.blogSingle .date {margin-block:0 48px;}
+
+.marginP {
+  margin-bottom: 40px;
+}
+
+.quote {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 53px;
+  text-align: center;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.center { 
+  align-items: center;
+  gap: 21px;
+}
+
+.center > * { 
+  padding: 0; 
+  margin: 0;
+  border-radius: 10px;
+}
+
+.center .btn {
+  padding: 5px 10px;
+  margin-left: -5px;
+}
+
+.btnWhite {
+  background-color: #F4F0EC;
+  color: #000000;
+}
+
+.quote h1 {margin-bottom: -150px;}
+
+.bottomList li::marker{
+  color: #CDA274;
+}
+
+.contact { 
+  margin-block: 0;
+  align-items: flex-start;
+}
+
+.contactForm .btn {
+  align-self: start;
+  margin-top: 63px;
+}
+
+.searchInput {
+  padding: 34px;
+  border-radius: 20px;
+  justify-content: space-between;
+}
+
+.searchInput input {
+  background-color: inherit;
+  border: none;
+  width: 75px;
+}
+
+
+.asideNew {
+  border-bottom: 1px solid #CDA274;
+  margin-bottom: 34px;
+}
+
+.categories {
+  padding: 27px 32px;
+  border-radius: 20px;
+}
+
+.category {
+  border-bottom: 1px solid #CDA274;
+  padding-bottom: 10px;
+}
+
+.tagsBtns {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags .btnWhite {
+  padding: 9px 30px;
+  margin: 0;
+}
+
+.tags .btnWhite:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+@media (max-width: 1200px){
+  .blogSingle {
+    padding-inline: 10px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1000px){
+  .aside {
+    display: none;
+  }
+  .blogSingle {
+    justify-content: center;
+    padding-inline: 20px;
+  }
+}
+
+@media (max-width: 900px){
+  .postContent {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px){
+  .latestPost {
+    margin-block: 75px;
+  }
+
+  .latestPost h1, .articlesNews h1 {
+    font-size: 40px;
+    margin-left: 20px;
+  }
+
+  .blogDetails {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 650px){
+  .postImg {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 500px){
+  .iconDate {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .blogSingle {
+    margin-block: 50px;
+  }
+
+  .blogDetails h1, 
+  .blogDetails h2, 
+  .blogDetails h3, 
+  .blogDetails p { text-align: center;} 
+
+  .contact .btn {margin: 25px auto 0 auto;}
+}
+
+@media (max-width: 450px){
+  .postImg {
+    max-width: 300px;
+  }
+
+  .numbered {
+    padding: 7px 8.5px;
+  }
+  .numberedIcon {
+    width: 40px;
+  }
+}
